@@ -42,7 +42,7 @@ def calculate_ndvi(df: pd.DataFrame, red_col: str, nir_col: str) -> pd.Series:
     return pd.Series()
 
 def plot_earth_observation(df: pd.DataFrame, band_cols: list, title: str, output_path: Path):
- """Plot earth observation data """
+    """Plot earth observation data """
     fig, ax = plt.subplots(figsize=(10, 6))
     
     for band in band_cols[:3]:

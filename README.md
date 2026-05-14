@@ -33,10 +33,10 @@ Edit `config.yaml` to customize:
 ## Remote Sensing Features
 
 Analysis includes:
-- **Multi-spectral bands**: Red, Green, Blue, NIR, SWIR
-- **NDVI calculation**: Vegetation index
-- **Time series analysis**: Temporal patterns
-- **Public data integration**: Earth observation datasets
+- Multi-spectral bands: Red, Green, Blue, NIR, SWIR
+- NDVI calculation: Vegetation index
+- Time series analysis: Temporal patterns
+- Public data integration: Earth observation datasets
 
 ## Caveats
 

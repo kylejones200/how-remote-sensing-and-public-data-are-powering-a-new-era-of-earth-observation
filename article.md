@@ -8,7 +8,7 @@ canonical_link: "https://medium.com/@kyle-t-jones/how-remote-sensing-and-public-
 # How Remote Sensing and Public Data Are Powering a New Era of Earth Observation From orbit, Barcelona is surprising green. This is the view of
 Sentinel-2 sensors; allowing us to see what we normally couldn't. The...
 
-### **How Remote Sensing and Public Data Are Powering a New Era of** Earth Observation
+### How Remote Sensing and Public Data Are Powering a New Era of Earth Observation
 From orbit, Barcelona is surprising green. This is the view of Sentinel-2 sensors; allowing us to see what we normally couldn't. The Copernicus program delivers multi-spectral imagery that allows us to observe, quantify, and understand cities like Barcelona in unprecedented detail.
 
 

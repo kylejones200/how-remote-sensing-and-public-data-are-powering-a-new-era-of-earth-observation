@@ -38,7 +38,7 @@ def main():
     elif config['data']['generate_synthetic']:
                 df = simulate_satellite_data(config['data']['n_points'], config['data']['n_bands'],
                                      config['data']['seed'])
-        band_cols = [col for col in df.columns if col != 'date']
+                band_cols = [col for col in df.columns if col != 'date']
     else:
         raise ValueError("No data source specified")
     
@@ -50,13 +50,13 @@ def main():
     
     if config['analysis']['calculate_ndvi'] and config['analysis']['red_band'] in df.columns and config['analysis']['nir_band'] in df.columns:
                 ndvi = calculate_ndvi(df, config['analysis']['red_band'], config['analysis']['nir_band'])
-        logging.info(f"Mean NDVI: {ndvi.mean():.4f}")
-        logging.info(f"NDVI Range: [{ndvi.min():.4f}, {ndvi.max():.4f}]")
+logging.info(f"Mean NDVI: {ndvi.mean():.4f}")
+logging.info(f"NDVI Range: [{ndvi.min():.4f}, {ndvi.max():.4f}]")
     
-    plot_earth_observation(df, band_cols, "Remote Sensing Earth Observation",
+plot_earth_observation(df, band_cols, "Remote Sensing Earth Observation",
                           output_dir / 'earth_observation.png')
     
-    logging.info(f"\nAnalysis complete. Figures saved to {output_dir}")
+logging.info(f"\nAnalysis complete. Figures saved to {output_dir}")
 
 if __name__ == "__main__":
     main()

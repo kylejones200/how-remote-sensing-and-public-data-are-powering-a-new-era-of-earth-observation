@@ -3,7 +3,6 @@
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from typing import Dict
 import matplotlib.pyplot as plt
 import logging
 
@@ -25,7 +24,7 @@ def simulate_satellite_data(n_points: int, n_bands: int = 3, seed: int = 42) -> 
     
     return pd.DataFrame(data)
 
-def analyze_earth_observation(df: pd.DataFrame, band_cols: list) -> Dict:
+def analyze_earth_observation(df: pd.DataFrame, band_cols: list) -> dict:
     """Analyze earth observation data."""
     return {
         'n_observations': len(df),

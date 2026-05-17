@@ -43,3 +43,11 @@ Analysis includes:
 - By default, generates synthetic satellite data.
 - Real remote sensing data available from USGS, NASA, ESA.
 - NDVI requires Red and NIR bands.
+
+## Disclaimer
+
+Educational/demo code only. Not financial, safety, or engineering advice. Use at your own risk. Verify results independently before any production or operational use.
+
+## License
+
+MIT — see [LICENSE](LICENSE).

@@ -51,15 +51,17 @@ def plot_earth_observation(
     df: pd.DataFrame, band_cols: list, title: str, output_path: Path, plot: bool = False
 ):
     """Plot earth observation data"""
-    if plot:
-        fig, ax = plt.subplots(figsize=(10, 6))
+    if not plot:
+        return
 
-        for band in band_cols[:3]:
-            ax.plot(df["date"], df[band], label=band.upper(), linewidth=1.2, alpha=0.7)
+    fig, ax = plt.subplots(figsize=(10, 6))
 
-        ax.set_xlabel("Date")
-        ax.set_ylabel("Reflectance")
-        ax.legend(loc="best")
+    for band in band_cols[:3]:
+        ax.plot(df["date"], df[band], label=band.upper(), linewidth=1.2, alpha=0.7)
 
-        plt.savefig(output_path, dpi=100, bbox_inches="tight")
-        plt.close()
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Reflectance")
+    ax.legend(loc="best")
+
+    plt.savefig(output_path, dpi=100, bbox_inches="tight")
+    plt.close()

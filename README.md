@@ -2,6 +2,14 @@
 
 This project demonstrates remote sensing analysis using public earth observation data.
 
+## Business context
+
+From orbit, Barcelona is surprising green. This is the view of Sentinel-2 sensors; allowing us to see what we normally couldn't. The Copernicus program delivers multi-spectral imagery that allows us to observe, quantify, and understand cities like Barcelona in unprecedented detail.
+
+Europe's commitment to open data means access to earth observation data is no longer the limiting factor (at least at some level of aggregation).
+
+On February 5, 2025, two Sentinel-2 images captured Barcelona and its surrounding metropolitan region. One uses the Normalized Difference Vegetation Index (NDVI) to visualize plant health. The other presents a false-color composite using infrared light to highlight vegetation and urban features.
+
 ## Article
 
 Medium article: [How Remote Sensing and Public Data are Powering a New Era of Earth Observation](https://medium.com/@kylejones_47003/how-remote-sensing-and-public-data-are-powering-a-new-era-of-earth-observation-8002f2b1e04d)

@@ -1,0 +1,15 @@
+[package]
+name = "how_remote_sensing_and_public_data_are_powering_a_new_era_of_earth_observation_rs"
+description = "Python bindings (PyO3) for how_remote_sensing_and_public_data_are_powering_a_new_era_of_earth_observation_core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "how_remote_sensing_and_public_data_are_powering_a_new_era_of_earth_observation_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+how_remote_sensing_and_public_data_are_powering_a_new_era_of_earth_observation_core = { path = "../core" }
+pyo3 = { version = "0.28", features = ["extension-module"] }
+numpy = "0.28"
